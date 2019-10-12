@@ -1,0 +1,50 @@
+Define a number n as factor-distant if <1,n> is equal to the number of prime factors of n.  What is the density of the set of all factor-distant numbers in N?  Jeff conjectures it is either 0 or 1.
+    -for example all primes are factor distant because 1->p is a valid path and is of minimum length
+
+Another really interesting result related to what you were saying is something like if <a,b> > x, then there is probability p that b lies within two primes of gap greater than y
+
+Suppose n is highly composite.  Anything special to say about <1,n>?
+
+Suppose a<b<c and we know <a,b> and <a,c> - can we put an upper or lower bound on <a,c> that is better than the triangle inequality?
+
+Define a number n as "highly remote" if <1,n> is greater than <1,m> for all m<n.  What are its properties?
+
+Focus on the types of paths we know won’t be minimal. Otherwise calculating the metric will be next to impossible
+    -For example addition can never follow subtraction and vice versa
+
+How many times can a minimal path alternate back and forth between addition / subtraction and multiplication/division?
+    -I feel like the answer has to be relatively low or infinite
+    
+For all a, there exists an m such that for all n greater than m, <a,a^n> < m-1 ?
+
+Is it true that for all primes p, (p-1)/2 is adjacent to a semiprime?
+    -JEFF COUNTEREXAMPLE?: 1->179424673->179424672->89712336 is the fastest path and there is no shorter one
+
+for <1,n> <= 3 implies either n-1 or n+1 is prime or semiprime or n-2 or n+2 is prime (NOT ALL CASES!)
+
+0-path: trivial
+
+1-path: a times some prime is b, or a + - 1 is b
+
+2-path: +1 +1, -1 -1, xp1 +1, xp1 -1, +1 xp1, -1 xp1, xp1 xp2
+
+Ratio between prime gap and number of factors the composites have
+
+Weak Jeff Conjecture: For every prime q, there exists an integer n and a prime p such that the following path goes from 1 to p, and from p to p+-1, and from p+-1 to (p+-1)/q such that the path is a minimal path that requires
+use of a prime p or greater to be a minimal path.
+
+Strong Jeff Conjecture: For any integer n, there exists a prime p such that either (p*n)+1 or (p*n)-1 is prime.
+
+the set of all paths from a to b should be well ordered, If you first define a set as minimal by the length of the path, And then sort it by the number of each individual vertex on the path
+
+For all primes p, <p,a> < <1,a> + 2, 
+
+Conjecture: For any given a, There are infinitely many primes p such that <p,a>=<1,a>+1
+    -stronger conjecture, there are finitely many primes with <p,a> < <1,a> + 1
+    -Which essentially means that the functions p(a) = <p,a> is almost identical to q(a) for all primes q
+
+Possible that <1,b> could be bounded by a constant    
+
+Suppose a and b are in (0,n).   how can we choose a and b to maximize <a,b>? can we know what the maximal value is without bruteforcing it?
+
+suppose we know <1,a>.   under what conditions is <1,a+1>=<1,a>+1? Lemma: If <1,b> +1 = <1,b+1>, then <1,b> <= p(b)-b-1 where p(b) is the least prime greater than b.
